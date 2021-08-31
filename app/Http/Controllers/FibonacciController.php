@@ -10,6 +10,11 @@ use Laravel\Lumen\Routing\Controller;
 class FibonacciController extends Controller
 {
 
+    public function index()
+    {
+        return view('index');
+    }
+
     /**
      * @param Fibonacci $fibonacci
      * @param $position

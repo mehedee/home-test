@@ -14,3 +14,4 @@
 */
 
 $router->get('/fibonacci/{position}', 'FibonacciController@show');
+$router->get('/','FibonacciController@index');
