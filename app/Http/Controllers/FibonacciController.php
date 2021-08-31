@@ -24,7 +24,7 @@ class FibonacciController extends Controller
         }
 
         $statusCode = $value ? 200 : 400;
-        
+
         return new Response(['value' => $value], $statusCode);
     }
 }
