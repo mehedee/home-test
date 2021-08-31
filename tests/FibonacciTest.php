@@ -30,4 +30,20 @@ class FibonacciTest extends TestCase
         $response        = $fibonacciHelper->getValue('FFF');
     }
 
+    public function testFloatNumber()
+    {
+        $fibonacciHelper = new Fibonacci();
+        $response        = $fibonacciHelper->getValue(1.1);
+
+        $this->assertEquals(1, $response, 'Float Number response like Int');
+    }
+
+    public function testMax()
+    {
+        $this->expectException(TypeError::class);
+
+        $fibonacciHelper = new Fibonacci();
+        $response        = $fibonacciHelper->getValue(100);
+    }
+
 }
