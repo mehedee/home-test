@@ -1,24 +1,25 @@
-# Lumen PHP Framework
+# Home Test: Find the n'th Number in Fibonacci Series. 
 
-[![Build Status](https://travis-ci.org/laravel/lumen-framework.svg)](https://travis-ci.org/laravel/lumen-framework)
-[![Total Downloads](https://img.shields.io/packagist/dt/laravel/framework)](https://packagist.org/packages/laravel/lumen-framework)
-[![Latest Stable Version](https://img.shields.io/packagist/v/laravel/framework)](https://packagist.org/packages/laravel/lumen-framework)
-[![License](https://img.shields.io/packagist/l/laravel/framework)](https://packagist.org/packages/laravel/lumen-framework)
+###Description
+The home test is done using ``Laravel Lumen``. Taking the benefit of routing and to keep similarity with FlixMobility's current stack was the reason behind this intention.
+Although the problem is too small to use a framework, using a microframework, it allowed me to focus in actual problem-solving more.
+The problem is solved using the interface provided in the test. The interface and the class files are available in ``app/Helpers`` folder.
 
-Laravel Lumen is a stunningly fast PHP micro-framework for building web applications with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Lumen attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as routing, database abstraction, queueing, and caching.
+###Requirements
+The application is based on ``PHP8.0`` to take advantage of union types.
+``Composer`` is required as standard to install the dependencies for the framework.
 
-## Official Documentation
+###Running The Application
+To Run the application simply run the following commands in shell when inside the project folder.
+```angular2html
+composer install                        // Installs the packages
+php -S localhost:8000 -t public         // Start the built in php server
+```
+The application shall run at [localhost:8000](localhost:8000) port.
 
-Documentation for the framework can be found on the [Lumen website](https://lumen.laravel.com/docs).
+###Tests
+Two test files were written to test the Method and the Endpoint to verify different case scenarios.
+The files are available at ``tests``folder.
+To run the test, please run ``./vendor/bin/phpunit`` (tested from Mac)
 
-## Contributing
 
-Thank you for considering contributing to Lumen! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Lumen, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Lumen framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
