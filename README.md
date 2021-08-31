@@ -15,7 +15,7 @@ To Run the application simply run the following commands in shell when inside th
 composer install                        // Installs the packages
 php -S localhost:8000 -t public         // Start the built in php server
 ```
-The application shall run at [localhost:8000](localhost:8000) port.
+The application shall run at [localhost:8000](localhost:8000) port. A simple View is prepared to test the endpoint.
 
 ### Tests
 Two test files were written to test the Method and the Endpoint to verify different case scenarios.
@@ -23,3 +23,10 @@ The files are available at ``tests``folder.
 To run the test, please run ``./vendor/bin/phpunit`` (tested from Mac)
 
 
+### Testing the Endpoint
+Api Endpoint:
+
+``{baseUrl}/fibonacci/{position}``
+
+If the application is running at ``localhost:8000`` then the full url would be
+[localhost:8000/fibonacci/5](localhost:8000/fibonacci/5) where ``5`` is the input. 
